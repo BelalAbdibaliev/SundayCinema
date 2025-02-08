@@ -11,7 +11,7 @@ namespace Infrastructure.Data
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("D:/C#/SundayCinema/API/appsettings.json")
+                .AddJsonFile("D:/Csharp/SundayCinema/API/appsettings.json")
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();

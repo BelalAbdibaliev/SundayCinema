@@ -6,12 +6,12 @@ using Domain.Entities;
 
 namespace Application.Services;
 
-public class BookingService : IBookingService
+public class TicketBooker : IBookingService
 {
     private readonly IUnitOfWork _unitOfWork;
-    private readonly ILogger<BookingService> _logger;
+    private readonly ILogger<TicketBooker> _logger;
     
-    public BookingService(IUnitOfWork unitOfWork, ILogger<BookingService> logger)
+    public TicketBooker(IUnitOfWork unitOfWork, ILogger<TicketBooker> logger)
     {
         _unitOfWork = unitOfWork;
         _logger = logger;
